@@ -1,5 +1,5 @@
 namespace :assets do
-  task :precompile do
-    puts `bundle exec jekyll build`
-  end
+	  task :precompile do
+		      sh 'middleman build'
+		        end
 end
