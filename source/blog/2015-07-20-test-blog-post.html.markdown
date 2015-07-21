@@ -13,4 +13,4 @@ The main page should be [here](https://blog.herocc.com/blog) or [here](https://h
 
 You can find the source [here](https://github.com/HeroCC/blog), submit a PR if you like!
 
-
+HeroCC
