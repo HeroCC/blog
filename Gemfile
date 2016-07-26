@@ -26,3 +26,4 @@ group :production do
   gem "puma" # Heroku Webhosting
 end
 
+gem "rack-contrib"
