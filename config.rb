@@ -66,3 +66,7 @@ configure :build do
   # Minify Javascript on build
   # activate :minify_javascript
 end
+
+configure :deploy do
+  activate :sitemap
+end
