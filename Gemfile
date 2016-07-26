@@ -21,6 +21,9 @@ gem 'redcarpet', '~> 3.3', '>= 3.3.3'
 # For feed.xml.builder
 gem "builder", "~> 3.0"
 
-# Automatic Sitemap Generatin
-gem "middleman-sitemap"
+# Automatic Sitemap Generation
+group :production do
+  gem "middleman-sitemap"
+  gem "puma"
+end
 
