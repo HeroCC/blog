@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+// Variables
+$enable-flex: true;
+
+@import "bootstrap.min.css"; // Darkly
+@import "font-awesome";
+@import "font-awesome-sprockets";
+
+
+.navbar{
+margin-bottom: 30px;
+}
+
+#main {
+display: flex;
+flex-direction: column;
+justify-content: center; /* align horizontal */
+align-items: center; /* align vertical */
+margin-left: 5%;
+margin-right: 5%;
+}
+
+#content{
+
+}
+
+#sorting {
+  margin-top: 35px;
+  width: 100%;
+}
+
+#recent {
+  float: right;
+}
+
+#year {
+  float: left;
+}

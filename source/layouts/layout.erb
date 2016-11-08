@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv='X-UA-Compatible' content='IE=edge;chrome=1' />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HeroCC's Blog<%= ' | ' + current_article.title unless current_article.nil? %></title>
+  <%= feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed" %>
+  <%= stylesheet_link_tag :site %>
+  <%= partial "partials/tags" %>
+  <%= javascript_include_tag "https://code.jquery.com/jquery-3.1.1.min.js" %> <!-- jQuery -->
+  <%= javascript_include_tag "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" %> <!-- Bootstrap JS -->
+</head>
+<body>
+
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">HeroCC's Blog</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="/">Blog <span class="sr-only">(current)</span></a></li>
+          <li><a href="#">Link</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Separated link</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">One more separated link</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="https://herocc.com">Home</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+
+  <div id="main">
+    <div id="content" role="main">
+      <%= yield %>
+    </div>
+
+    <div id="sorting">
+      <aside>
+        <div id="recent">
+          <p>
+            <h2>Recent Articles</h2>
+            <ol>
+              <% blog.articles[0...5].each do |article| %>
+              <li><%= link_to article.title, article %> <span><%= article.date.strftime('%b %e') %></span></li>
+              <% end %>
+            </ol>
+          </p>
+        </div>
+
+        <!--
+        <div id="tags">
+          <p>
+            <h2>Tags</h2>
+            <ol>
+              <% blog.tags.each do |tag, articles| %>
+              <li><%= link_to "#{tag} (#{articles.size})", tag_path(tag) %></li>
+              <% end %>
+            </ol>
+          </p>
+        </div>
+      -->
+
+      <div id="year">
+        <p>
+          <h2>By Year</h2>
+          <ol>
+            <% blog.articles.group_by {|a| a.date.year }.each do |year, articles| %>
+            <li><%= link_to "#{year} (#{articles.size})", blog_year_path(year) %></li>
+            <% end %>
+          </ol>
+        </p>
+      </div>
+    </aside>
+  </div>
+</div>
+</body>
+</html>

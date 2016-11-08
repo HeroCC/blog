@@ -11,12 +11,11 @@ gem 'tzinfo-data', platforms: [:mswin, :mingw, :jruby]
 # Middleman Gems
 gem "middleman", "~> 4.1"
 gem "middleman-blog"
-group :development do
-  gem "middleman-livereload"
-end
+gem "middleman-livereload"
 gem "middleman-syntax" # Code Highlighting
 
 gem 'redcarpet', '~> 3.3', '>= 3.3.3'
+gem 'nokogiri'
 
 # For feed.xml.builder
 gem "builder", "~> 3.0"
@@ -27,3 +26,6 @@ group :production do
 end
 
 gem "rack-contrib"
+
+# Actual Site Libs
+gem 'font-awesome-sass', '~> 4.6.2'
