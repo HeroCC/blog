@@ -43,6 +43,11 @@ activate :blog do |blog|
   # blog.paginate = true
   # blog.per_page = 10
   # blog.page_link = "page/{num}"
+
+  # Code Highlighting
+  activate :syntax
+  set :markdown_engine, :redcarpet
+  set :markdown, :fenced_code_blocks => true, :smartypants => true
 end
 
 page "/feed.xml", layout: false

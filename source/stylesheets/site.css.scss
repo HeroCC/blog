@@ -1,12 +1,16 @@
 @charset "utf-8";
 
-// Variables
+/* Variables */
 $enable-flex: true;
 
-@import "bootstrap.min.css"; // Darkly
+@import "bootstrap.min.css"; /* Darkly */
+@import "codeHighlight.css";
 @import "font-awesome";
 @import "font-awesome-sprockets";
 
+body {
+font-size: 1vw;
+}
 
 .navbar{
 margin-bottom: 30px;
@@ -26,14 +30,24 @@ margin-right: 5%;
 }
 
 #sorting {
-  margin-top: 35px;
-  width: 100%;
+margin-top: 35px;
+width: 100%;
+list-style-position: inside;
 }
 
 #recent {
-  float: right;
+float: right;
+text-align: right;
 }
 
 #year {
-  float: left;
+float: left;
+}
+
+#articleInfo {
+display: flex;
+flex-direction: column;
+justify-content: center; /* align horizontal */
+align-items: center; /* align vertical */
+margin-bottom: 30px;
 }

@@ -1,6 +1,21 @@
 <% wrap_layout :layout do %>
-  <article>
-    <%= yield %>
-  </article>
-  <hr>
+<div id="article">
+  <div id="articleInfo">
+    <div id="title">
+      <h1><%= link_to current_article.title, current_article %></h1>
+    </div>
+    <div id="date">
+      <h3><%= current_article.date.strftime('%B %e, %Y') %></h3>
+    </div>
+  </div>
+
+  <div id="articleContent">
+    <article>
+      <p>
+        <%= yield %>
+      </p>
+    </article>
+  </div>
+</div>
+<hr>
 <% end %>
