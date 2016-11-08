@@ -34,7 +34,7 @@ activate :blog do |blog|
   # blog.year_link = "{year}.html"
   # blog.month_link = "{year}/{month}.html"
   # blog.day_link = "{year}/{month}/{day}.html"
-  # blog.default_extension = ".markdown"
+  blog.default_extension = ".md"
 
   blog.tag_template = "tag.html"
   blog.calendar_template = "calendar.html"
@@ -63,13 +63,16 @@ end
 #   end
 # end
 
-# Build-specific configuration
-configure :build do
-  # Minify CSS on build
-  # activate :minify_css
+set :css_dir,      'css'
+set :js_dir,       'js'
+set :images_dir,   'images'
+set :build_dir,    'build'
+set :partials_dir, 'partials'
+set :fonts_dir,    'fonts'
 
-  # Minify Javascript on build
-  # activate :minify_javascript
+configure :build do
+  activate :minify_css
+  activate :minify_javascript
 end
 
 configure :deploy do
