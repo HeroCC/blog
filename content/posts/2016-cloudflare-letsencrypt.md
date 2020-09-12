@@ -13,7 +13,7 @@ Before we do anything, we need to install LetsEncrypt. LetsEncrypt reccomends [C
 
 Now that Certbot/LE is installed, we will continue on with the setup. By default, apache passes all traffic to the backend application when using ProxyPass. We need to add an exception to this rule by installing and including a custom config. *If you aren't using ProxyPass, skip this step*. Make a new file in `/etc/apache2/conf-avaliable/letsencrypt-proxypass-fix.conf`, and paste the following into it:
 
-```apache
+```xml
 # From https://github.com/certbot/certbot/issues/2164
 <IfModule mod_proxy.c> # If Proxy is installed
     ProxyPass "/.well-known/acme-challenge" "!" # Do not proxy the acme verification
@@ -36,7 +36,7 @@ Now that most of the prep work is finished, we can get to actually generating th
 ## Installing the Certificate
 Now that you have generated the certificate, you need to install it to apache. Open your site's config, and edit it to look something like the following. Note, some applications require extra flags and steps, so please follow their documentation as well; this is a minimal config. Also, don't forget to include any other configurations you had from your old config!
 
-```apache
+```xml
 <VirtualHost *:80>
 ServerName YOUR.DOMAIN.HERE
 Redirect permanent / https://YOUR.DOMAIN.HERE/ # Redirect all nonsecure requests to use HTTPS
