@@ -41,7 +41,7 @@ pagerSize = 5
 
   themeColor = "#1b1c1d"
 
-  customCSS = ["/css/hello-friend-logo.css"]
+  customCSS = []
   customJS = []
 
   [params.author]
@@ -72,6 +72,7 @@ pagerSize = 5
       [languages.en.params.logo]
         logoText = "CC's Sink"
         logoHomeLink = "/"
+        logoCursorColor = "#67a2c9"
 
 [[menu.main]]
   identifier = "posts"
