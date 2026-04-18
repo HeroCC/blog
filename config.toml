@@ -3,7 +3,9 @@ languageCode = "en-us"
 theme = "hello-friend"
 paginate = 5
 
-googleAnalytics = "UA-36352435-4"
+[services]
+  [services.googleAnalytics]
+    id = "UA-36352435-4"
 
 [params]
   # dir name of your blog content (default is `content/posts`).
