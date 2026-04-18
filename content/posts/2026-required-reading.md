@@ -2,9 +2,10 @@
 title: "Required Reading"
 date: 2026-04-14T18:00:00+02:00
 lastmod: 2026-04-14T18:00:00+02:00
+draft: true
 ---
 
-A (slowly growing) list of blogs, gists, and I've found significant across the years, and/or find worth recommend to others.
+A (slowly growing) list of blogs, gists, and I've found significant across the years, and/or find worth recommending to others.
 
 ## What Color is your Function?
 
