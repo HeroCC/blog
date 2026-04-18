@@ -41,7 +41,7 @@ pagerSize = 5
 
   themeColor = "#1b1c1d"
 
-  customCSS = []
+  customCSS = ["/css/hello-friend-logo.css"]
   customJS = []
 
   [params.author]
@@ -78,12 +78,12 @@ pagerSize = 5
   name = "Posts"
   url = "/posts/"
 
-[[menu.main]]
-  identifier = "about"
-  name = "About"
-  url = "/about/"
+# [[menu.main]]
+#   identifier = "about"
+#   name = "About"
+#   url = "/about/"
 
-[[menu.main]]
-  identifier = "showcase"
-  name = "Showcase"
-  url = "/showcase/"
+# [[menu.main]]
+#   identifier = "showcase"
+#   name = "Showcase"
+#   url = "/showcase/"
