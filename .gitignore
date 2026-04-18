@@ -1,0 +1,20 @@
+# Hugo — build output and asset pipeline cache
+# https://gohugo.io/getting-started/directory-structure/
+/public/
+/resources/
+
+# Hugo — lock file for concurrent builds / module work
+.hugo_build.lock
+
+# Hugo + Tailwind / PostCSS (generated when that integration is enabled)
+hugo_stats.json
+
+# Hugo Version Manager — local toolchain selection
+.hvm
+
+# Site-level JS tooling (if you add a package.json at the project root)
+/node_modules/
+
+# Debug / stray process output
+trace.out
+nohup.out
