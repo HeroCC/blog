@@ -38,7 +38,7 @@ Skopeo is a "command line utility that performs various operations on container 
 First, lets install skopeo. This depends on your operating system, so you should read [their installation instructions](https://github.com/containers/skopeo/blob/master/install.md) and come back once you've finished. 
 
 Once you finished installing skopeo, you should see something like this:
-```
+```shell
 $ skopeo --version
 skopeo version 1.1.1
 ```
@@ -49,7 +49,7 @@ If your old image repo is hosted on DockerHub, it's full link is `docker.io/YOUR
 
 If you have a lot of images this may take a while, so consider starting a `screen` session (something like `screen -S quaysync`). Then, replace the links below with your repo, and hit enter:
 
-```bash
+```shell
 $ skopeo sync --src docker --dest docker docker.io/YOUR-ORG/REPO-NAME quay.io/YOUR-ORG
 
 INFO[0000] Tag presence check              imagename=docker.io/org/repo tagged=false
