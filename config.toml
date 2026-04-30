@@ -52,7 +52,7 @@ pagerSize = 5
     maxWidth = "200px"
 
   [params.footer]
-    trademark = 2026
+    trademark = "HeroCC"
     rss = true
     copyright = true
     author = false
@@ -63,7 +63,7 @@ pagerSize = 5
     mask = "#1b1c1d"
     msapplication = "#1b1c1d"
     theme = "#1b1c1d"
-
+  
   [[params.social]]
     name = "twitter"
     url  = "https://x.com/HeroCC_"
@@ -80,7 +80,7 @@ pagerSize = 5
   [languages.en]
     weight = 1
     title = "CC's Sink"
-    copyright = ""
+    copyright = "CC BY-SA 4.0"
 
     [languages.en.params]
       subtitle = "A spot for my thoughts, ramblings, and occasionally advice"
