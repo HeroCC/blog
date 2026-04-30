@@ -12,3 +12,9 @@
   min-height: 0;
   margin-bottom: var(--gap);
 }
+
+/* Footer links: no underline (theme default is underline) */
+.footer a {
+  text-decoration: none;
+  text-underline-offset: unset;
+}
