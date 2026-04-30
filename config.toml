@@ -37,7 +37,7 @@ pagerSize = 5
   enableSharingButtons = false
   enableReadingTime = true
   enableGlobalLanguageMenu = false
-  enableThemeToggle = true
+  enableThemeToggle = false
 
   themeColor = "#1b1c1d"
 
