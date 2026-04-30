@@ -64,6 +64,18 @@ pagerSize = 5
     msapplication = "#1b1c1d"
     theme = "#1b1c1d"
 
+  [[params.social]]
+    name = "twitter"
+    url  = "https://x.com/HeroCC_"
+
+  [[params.social]]
+    name = "github"
+    url  = "https://github.com/HeroCC"
+
+  [[params.social]]
+    name = "stackoverflow"
+    url  = "https://stackexchange.com/users/1892079"
+
 [languages]
   [languages.en]
     weight = 1
