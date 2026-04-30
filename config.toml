@@ -1,7 +1,7 @@
 baseURL = "/"
 languageCode = "en-us"
 title = "CC's Sink"
-theme = "hello-friend-ng"
+theme = "PaperMod"
 defaultContentLanguage = "en"
 
 enableEmoji = true
@@ -20,59 +20,28 @@ pagerSize = 5
   series = "series"
 
 [params]
-  dateform = "2006-01-02"
-  dateformShort = "Jan 2"
-  dateformNum = "2006-01-02"
-  dateformNumTime = "2006-01-02 15:04"
+  description = "HeroCC's blog about software engineering, among other things"
+  author = "CC"
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  disableThemeToggle = true
 
-  description = "A spot for my thoughts, ramblings, and occasionally advice"
-  keywords = ""
-  images = [""]
+  [params.homeInfoParams]
+    Title = "CC's Sink"
+    Content = "A spot for my thoughts, ramblings, and occasionally advice"
 
-  homeSubtitle = "A spot for my thoughts, ramblings, and occasionally advice"
-
-  disableReadOtherPosts = false
-  readOtherPosts = "Read other posts"
-
-  enableSharingButtons = false
-  enableReadingTime = true
-  enableGlobalLanguageMenu = false
-  enableThemeToggle = false
-
-  themeColor = "#1b1c1d"
-
-  customCSS = []
-  customJS = []
-
-  [params.author]
-    name = "CC"
-
-  [params.portrait]
-    path = "https://secure.gravatar.com/avatar/467697c96edf8bb12fd7ab8d84c14cbf?size=200&d=404"
-    maxWidth = "200px"
-
-  [params.footer]
-    trademark = "HeroCC"
-    rss = true
-    copyright = true
-    author = false
-    topText = []
-    bottomText = []
-
-  [params.favicon.color]
-    mask = "#1b1c1d"
-    msapplication = "#1b1c1d"
-    theme = "#1b1c1d"
-  
-  [[params.social]]
+  [[params.socialIcons]]
     name = "X"
     url  = "https://x.com/HeroCC_"
 
-  [[params.social]]
+  [[params.socialIcons]]
     name = "github"
     url  = "https://github.com/HeroCC"
 
-  [[params.social]]
+  [[params.socialIcons]]
     name = "stackoverflow"
     url  = "https://stackexchange.com/users/1892079"
 
@@ -80,15 +49,7 @@ pagerSize = 5
   [languages.en]
     weight = 1
     title = "CC's Sink"
-    copyright = "CC BY-SA 4.0"
-
-    [languages.en.params]
-      subtitle = "A spot for my thoughts, ramblings, and occasionally advice"
-
-      [languages.en.params.logo]
-        logoText = "CC's Sink"
-        logoHomeLink = "/"
-        logoCursorColor = "#67a2c9"
+    copyright = "Content CC BY-SA 4.0"
 
 [[menu.main]]
   identifier = "posts"
