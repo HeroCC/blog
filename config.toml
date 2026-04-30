@@ -65,7 +65,7 @@ pagerSize = 5
     theme = "#1b1c1d"
   
   [[params.social]]
-    name = "twitter"
+    name = "X"
     url  = "https://x.com/HeroCC_"
 
   [[params.social]]
