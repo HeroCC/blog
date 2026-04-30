@@ -21,7 +21,7 @@ pagerSize = 5
 
 [params]
   description = "HeroCC's blog about software engineering, among other things"
-  author = "CC"
+  author = "HeroCC"
   ShowReadingTime = true
   ShowShareButtons = false
   ShowPostNavLinks = true
