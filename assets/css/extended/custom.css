@@ -6,3 +6,9 @@
 [data-theme="light"] .header {
   background-color: color-mix(in srgb, var(--theme) 94%, black);
 }
+
+/* Tighten home intro spacing so post list starts higher */
+.first-entry.home-info {
+  min-height: 0;
+  margin-bottom: var(--gap);
+}
