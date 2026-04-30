@@ -47,6 +47,10 @@ pagerSize = 5
   [params.author]
     name = "CC"
 
+  [params.portrait]
+    path = "https://secure.gravatar.com/avatar/467697c96edf8bb12fd7ab8d84c14cbf?size=200&d=404"
+    maxWidth = "200px"
+
   [params.footer]
     trademark = 2026
     rss = true
