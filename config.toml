@@ -12,7 +12,7 @@ pagerSize = 5
 
 [services]
   [services.googleAnalytics]
-    id = "UA-36352435-4"
+    id = "G-X0PE3V4L34"
 
 [taxonomies]
   tag = "tags"
