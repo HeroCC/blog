@@ -28,6 +28,8 @@ pagerSize = 5
   ShowBreadCrumbs = true
   ShowCodeCopyButtons = true
   disableThemeToggle = true
+  hideFooter = true
+  disableScrollToTop = true
 
   [params.homeInfoParams]
     imageUrl = "https://secure.gravatar.com/avatar/467697c96edf8bb12fd7ab8d84c14cbf?size=200&d=404"
