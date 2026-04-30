@@ -1,0 +1,8 @@
+/* Slightly increase header contrast per active theme */
+[data-theme="dark"] .header {
+  background-color: color-mix(in srgb, var(--theme) 99%, darkgray);
+}
+
+[data-theme="light"] .header {
+  background-color: color-mix(in srgb, var(--theme) 94%, black);
+}
